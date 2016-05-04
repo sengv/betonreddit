@@ -1,0 +1,47 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+    
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+        
+        {% block header %}
+        {% endblock %}
+    </head>
+    
+    
+    
+    
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+    
+    
+    
+    
+
+
+
+
+
+    <footer>
+    
+    
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/main.js' %}"></script> 
+        
+        {% block footer %}
+        {% endblock %}
+    </footer>
+
+</html>
+
+
+
+
