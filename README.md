@@ -1,0 +1,25 @@
+# betonreddit
+
+
+This is a website where users can place bets on when/how often certain things happen on Reddit. Users will win (or lose) very valuable imaginary points.
+
+
+Everyone is welcomed to work on this project. Fork it, and do your thing!
+
+I am using Python3.4. 
+
+I recommend working in a virtual environment. 
+
+
+Here is one way to start working on this:
+
+1. Using a Terminal or Command Prompt, navigate to the directory where the project will be stored.
+2. Enter in `git init`. If you don't have it, here is the download page: https://git-scm.com/download/ 
+3. Go to your 'betonreddit' repository that you just forked and copy the HTTPS url. It should be something like `https://github.com/<your_username>/betonreddit.git.`
+4. In your Terminal, enter in `git remote add origin https://github.com/<your_username>/betonreddit.git`
+5. Enter in `git pull origin master`. 
+6. To install the necessary tools, `pip install -r requirements.txt`. (requirements.txt is coming soon)
+
+
+
+7. Once you implemented some features and you want to add to the project, you create a Pull Request. 
