@@ -45,11 +45,15 @@ INSTALLED_APPS = [
     
     
     #custom installed apps
-    'django_nose',
+    # The Django sites framework is required
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    # Login via Google
+    'allauth.socialaccount.providers.google',
 ]
 
-
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 
 MIDDLEWARE_CLASSES = [
