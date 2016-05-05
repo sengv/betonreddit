@@ -1,5 +1,8 @@
 # betonreddit
 
+[![Coverage Status](https://coveralls.io/repos/github/betonreddit/betonreddit/badge.svg?branch=master)](https://coveralls.io/github/betonreddit/betonreddit?branch=master)
+
+
 
 This is a website where users can place bets on when/how often certain things happen on Reddit. Users will win (and lose) very valuable imaginary points.
 
