@@ -18,9 +18,9 @@ from django.contrib import admin
 
 from .views import home
 
+from redditData.api import redApi
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url('', home, name="home"),
-
+    url(r'^subreddit/(?P<sub>[-\w]+)/$', redApi().get),
 ]
