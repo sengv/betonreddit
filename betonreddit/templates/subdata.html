@@ -1,5 +1,5 @@
 <ul>
     {% for post in posts %}
-        <li><h1>{{  post.data.title }}</h1></li>
+        <li><a href="/post/{{ post.data.permalink }}">{{  post.data.title }}</a></li>
     {% endfor %}
 </ul>

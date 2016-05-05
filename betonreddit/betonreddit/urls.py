@@ -22,5 +22,6 @@ from redditData.api import redApi
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^subreddit/(?P<sub>[-\w]+)/$', redApi().get),
+    url(r'^subreddit/(?P<sub>[-\w]+)/$', redApi().getSub),
+    url(r'^post/(?P<url>.*)/$', redApi().getPost),
 ]
