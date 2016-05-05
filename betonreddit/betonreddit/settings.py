@@ -40,16 +40,21 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     #custom apps
-    'user',
+    'player',
+    'wager',
     
     
     
     #custom installed apps
-    'django_nose',
+    # The Django sites framework is required
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    # Login via Google
+    'allauth.socialaccount.providers.google',
 ]
 
-
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 
 MIDDLEWARE_CLASSES = [
@@ -138,6 +143,9 @@ STATICFILES_DIRS = (
 
 FIXTURES_DIRS = (
     os.path.join(BASE_DIR, "fixtures"),
+
+
+)
 
 
 
