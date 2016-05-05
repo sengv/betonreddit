@@ -15,8 +15,7 @@ class redApi(View):
         return HttpResponse('Error getting subreddit data')
 
     def getPost(self, request, *args, **kwargs):
-
-        comments = post.post(kwargs.get('url'), kwargs.get('name'))
+        comments = post.post(kwargs.get('url'))
         comments.loadData()
 
         if comments.comments:

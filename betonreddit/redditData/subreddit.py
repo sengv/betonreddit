@@ -18,8 +18,12 @@ class subreddit(object):
     def loadData(self):
         req = Request(SUB_TEMPLATE.replace('{subreddit}',
                                            self.name))
-        req.add_header('User-Agent', 'super happy flair bot by /u/spladug')
+        
+        # Need user agent otherwise Reddit rejects the request
+        req.add_header('User-Agent', 'betonreddit')
         raw = urlopen(req)
+        
+        # Decodes to a string so JSON object can parse it
         rawData = raw.read().decode("utf-8")
         jsonData = json.loads(rawData)
         
@@ -27,7 +31,10 @@ class subreddit(object):
         self.json = jsonData
 
         jsonData = jsonData.get('data')
+        # jsonData will be none if there is an error, hopefully this stops
+        # exceptions from occuring
         if jsonData:
+            # Posts are stored in the children object
             self.posts = jsonData['children']
         
     def get(self, elem):

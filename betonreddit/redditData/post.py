@@ -6,6 +6,7 @@ REDDIT_URL = "https://www.reddit.com"
 class post(object):
     def __init__(self, post_url, post_name='default'):
         self.name = post_name
+        # if url passed already has reddit.com prefix don't add
         if REDDIT_URL in post_url:
             self.url  = post_url
         else:
@@ -21,8 +22,8 @@ class post(object):
 
     def loadData(self):
         req = Request(self.url + '.json')
-
-        req.add_header('User-Agent', 'super happy flair bot by /u/spladug')
+        
+        req.add_header('User-Agent', 'betonreddit')
         raw = urlopen(req)
 
         rawData = raw.read().decode("utf-8")
