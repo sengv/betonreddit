@@ -18,9 +18,10 @@ from django.contrib import admin
 
 from .views import home
 
+from redditData.api import redApi
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url('', home, name="home"),
-
+    url(r'^subreddit/(?P<sub>[-\w]+)/$', redApi().getSub), # the first parameter is classed as the subreddit name
+    url(r'^post/(?P<url>.*)/$', redApi().getPost), # This is to allow parameters with /'s in
 ]

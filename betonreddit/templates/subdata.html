@@ -1,0 +1,5 @@
+<ul>
+    {% for post in posts %}
+        <li><a href="/post/{{ post.data.permalink }}">{{  post.data.title }}</a></li>
+    {% endfor %}
+</ul>
