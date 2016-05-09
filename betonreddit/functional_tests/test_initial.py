@@ -26,7 +26,7 @@ class TestBeginning(StaticLiveServerTestCase):
         #self.browser.get(self.get_full_url("home"))
         self.browser.get("http://localhost:8081")
         
-        assert "Bet On Reddit" in self.browser.title
+        assert "Bet on Reddit" in self.browser.title
         
         
     

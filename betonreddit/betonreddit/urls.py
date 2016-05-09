@@ -13,15 +13,36 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
 
-from .views import home
+from .views import home, home_files
 
 from redditData.api import redApi
 
 urlpatterns = [
+    
+    
+    url(r'^accounts/', include('allauth.urls')),
+    
+    url(r'^(?P<filename>(robots.txt)|(humans.txt))$',
+        home_files, name='home-files'),
+        
+    url(r'^accounts/logout', 'django.contrib.auth.views.logout', {'next_page': '/'}),
+    
+    url(r'i18n/', include('django.conf.urls.i18n')),
+]
+
+urlpatterns += [
     url(r'^admin/', admin.site.urls),
     url(r'^subreddit/(?P<sub>[-\w]+)/$', redApi().getSub), # the first parameter is classed as the subreddit name
     url(r'^post/(?P<url>.*)/$', redApi().getPost), # This is to allow parameters with /'s in
+    
+    
+    #url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
+
+    
+    url(r'^$', home, name="home")#Home page. I think order matters, and this should be at the end. Probably. 
 ]
+
+
