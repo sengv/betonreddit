@@ -22,7 +22,22 @@ Here is one way to start working on this:
 4. In your Terminal, enter in `git remote add origin https://github.com/<your_username>/betonreddit.git`
 5. Enter in `git pull origin master`. 
 6. To install the necessary tools, `pip install -r requirements.txt`. 
-7. The SECRET_KEY is saved in a file called `secret.py` in the same directory as `settings.py`. Go to http://www.miniwebtool.com/django-secret-key-generator/ to generate your own secret key. `secret.py` should be ignored via the .gitignore file. There are better ways to hide the secret key, but this way is simple and it works.
+7. The SECRET_KEY is saved in a file called `secret.py` in the same directory as `settings.py`. Go to http://www.miniwebtool.com/django-secret-key-generator/ to generate your own secret key. `secret.py` should be ignored by version control via the .gitignore file. There are better ways to hide the secret key, but this way is simple and it works.
 
 
 7. Once you implemented some features and you want to add to the project, you create a Pull Request. 
+
+8. If you installed some stuff to help implement your feature, please update `requirements.txt` accordingly. `pip freeze > requirements.txt`. 
+
+
+
+
+
+
+
+
+
+
+
+
+
