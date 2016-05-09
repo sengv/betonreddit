@@ -3,6 +3,12 @@
 [![Coverage Status](https://coveralls.io/repos/github/betonreddit/betonreddit/badge.svg?branch=master)](https://coveralls.io/github/betonreddit/betonreddit?branch=master)
 
 
+[![Code Climate](https://codeclimate.com/github/betonreddit/betonreddit/badges/gpa.svg)](https://codeclimate.com/github/betonreddit/betonreddit)
+
+
+[![Issue Count](https://codeclimate.com/github/betonreddit/betonreddit/badges/issue_count.svg)](https://codeclimate.com/github/betonreddit/betonreddit)
+
+
 
 This is a website where users can place bets on when/how often certain things happen on Reddit. Users will win (and lose) very valuable imaginary points.
 
