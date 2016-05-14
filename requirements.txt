@@ -1,9 +1,16 @@
 coverage==4.0.3
+decorator==4.0.9
 defusedxml==0.4.1
 Django==1.9.6
 django-allauth==0.25.2
+factory-boy==2.7.0
+fake-factory==0.5.7
 oauthlib==1.1.1
+praw==3.4.0
+python-dateutil==2.5.3
 python3-openid==3.0.10
 requests==2.10.0
 requests-oauthlib==0.6.1
 selenium==2.53.2
+six==1.10.0
+update-checker==0.11

@@ -45,8 +45,7 @@ INSTALLED_APPS = [
     'wager',
 
     
-    
-    
+
     #custom installed apps
     #----------#
     

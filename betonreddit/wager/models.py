@@ -8,26 +8,32 @@ from player.models import Player
 
 class Betline(models.Model):
     
+    
+    
     #Parses Reddit stream for how often <key_phrase> is used.
-    key_phrase = models.TextField(default="wrong")
+    key_phrase = models.TextField(default="hello")
     
-    over_under = models.IntegerField(default=1)
-    
-    #'over' and 'under' keeps track of when people choose over or under.
-    #If lots of people choose one option, then we should adjust 'over_under' accordingly.
-    over = models.IntegerField(default=0)
-    under = models.IntegerField(default=0)
+    amount = models.IntegerField(default=1)
     
     #For bets that count total <key_phrases> in <time> in seconds. 
-    time = models.IntegerField(default=1)
+    duration = models.IntegerField(default=1)
+    
+    
+    class Meta:
+        unique_together=["key_phrase", "amount", "duration"]
+    
+    
+    def __str__(self):
+        
+        
+        return key_phrase
     
     
 
 class Wager(models.Model):
     
-    #MinValueValidator makes the minimum value be 1
-    #Not sure if PositiveIntegerField is that different from IntegerField just wanted to use it once.
-    amount = models.PositiveIntegerField(validators=[MinValueValidator(1)])
+
+    amount = models.IntegerField(default=1)
     
     #When a Player is deleted, we want all of their Wagers to also be deleted.
     player = models.ForeignKey(Player, on_delete=models.CASCADE)
@@ -35,13 +41,18 @@ class Wager(models.Model):
     #When a BetLine is deleted, we should still keep the data about a Wager b/c the Player still exists.
     betline = models.ForeignKey(Betline)
     
+    options = (("over", "over"),
+               ("under", "under"),        
+    )
+    
+    over_OR_under = models.CharField(max_length=8, choices=options, default="")
+    
     #True = Win, False = Loss. 
     result = models.BooleanField(default=False)
     
-    
-    
-    
+    class Meta:
+        unique_together = ["amount", "player", "betline", "over_OR_under"]
+
     def __str__(self):
         
-        
-        return self.amount
+        return str(player.id) + "/" + str(betline)

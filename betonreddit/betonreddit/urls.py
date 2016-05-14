@@ -23,7 +23,7 @@ from redditData.api import redApi
 urlpatterns = [
     
     
-    url(r'^accounts/', include('allauth.urls')),
+    url(r'^accounts/', include('allauth.urls'), name="google-login"),
     
     url(r'^(?P<filename>(robots.txt)|(humans.txt))$',
         home_files, name='home-files'),
@@ -35,8 +35,8 @@ urlpatterns = [
 
 urlpatterns += [
     url(r'^admin/', admin.site.urls),
-    url(r'^subreddit/(?P<sub>[-\w]+)/$', redApi().getSub), # the first parameter is classed as the subreddit name
-    url(r'^post/(?P<url>.*)/$', redApi().getPost), # This is to allow parameters with /'s in
+    url(r'^subreddit/(?P<sub>[-\w]+)/$', redApi().getSub, name="subreddit"), # the first parameter is classed as the subreddit name
+    url(r'^post/(?P<url>.*)/$', redApi().getPost, name="post"), # This is to allow parameters with /'s in
     
     
     #url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),

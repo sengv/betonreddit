@@ -93,5 +93,5 @@ ENV/
 *~
 secret.py
 *.sqlite3
-
+htmlcov/
 

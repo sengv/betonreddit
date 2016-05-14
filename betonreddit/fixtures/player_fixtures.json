@@ -1,0 +1,50 @@
+[
+  {
+    "model": "player.Player",
+    
+    "fields": {
+      "username": "cbratton09",
+      "email": "cthoughts@gmail.com",
+      "password": "password",
+    }
+  },
+  {
+    "model": "player.Player",
+    
+    "fields": {
+      "username": "John",
+      "email": "Lennon",
+      "password": "John",
+    }
+  },
+
+  {
+    "model": "player.Player",
+    
+    "fields": {
+      "username": "John",
+      "email": "Lennon",
+      "password": "John",
+    }
+  },
+
+  {
+    "model": "player.Player",
+    
+    "fields": {
+      "username": "John",
+      "email": "Lennon",
+      "password": "John",
+    }
+  },
+
+  {
+    "model": "player.Player",
+    
+    "fields": {
+      "username": "John",
+      "email": "Lennon",
+      "password": "John",
+    }
+  },
+]
