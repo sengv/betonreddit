@@ -4,14 +4,19 @@ from django.core.validators import MinValueValidator
 from player.models import Player
 # Create your models here.
 
-
+class BetlineManager(models.Manager):
+    
+    def get_by_natural_key(self, key_phrase, amount, duration):
+        return self.get(key_phrase=key_phrase, amount=amount,
+                        duration=duration)
+    
 
 class Betline(models.Model):
     
-    
+    objects = BetlineManager()
     
     #Parses Reddit stream for how often <key_phrase> is used.
-    key_phrase = models.TextField(default="hello")
+    key_phrase = models.CharField(max_length = 40, default="hello")
     
     amount = models.IntegerField(default=1)
     
@@ -19,14 +24,14 @@ class Betline(models.Model):
     duration = models.IntegerField(default=1)
     
     
-    class Meta:
-        unique_together=["key_phrase", "amount", "duration"]
+    #class Meta:
+    #    unique_together=(('key_phrase', 'amount', 'duration'),)
     
     
     def __str__(self):
         
         
-        return key_phrase
+        return "Phrase: " + str(self.key_phrase) + ", Amount: " + str(self.amount)
     
     
 
@@ -50,9 +55,9 @@ class Wager(models.Model):
     #True = Win, False = Loss. 
     result = models.BooleanField(default=False)
     
-    class Meta:
-        unique_together = ["amount", "player", "betline", "over_OR_under"]
+    #class Meta:
+    #    unique_together = ["amount", "player", "betline", "over_OR_under"]
 
     def __str__(self):
         
-        return str(player.id) + "/" + str(betline)
+        return str(self.player.id) + "/" + str(self.betline)

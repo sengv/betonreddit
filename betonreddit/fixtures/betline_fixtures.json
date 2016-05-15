@@ -1,0 +1,47 @@
+[
+  {
+    "model":"wager.Betline",
+		
+    "fields": {
+
+    "key_phrase":", but",
+    "amount": 10,
+    "duration": 60	
+    }
+  },
+
+  {
+    "model":"wager.Betline",
+		
+    "fields": {
+
+    "key_phrase":"just because",
+    "amount": 10,
+    "duration": 60	
+    }
+  },
+
+
+  {
+    "model":"wager.Betline",
+		
+    "fields": {
+
+    "key_phrase":"i dont mean",
+    "amount": 10,
+    "duration": 60	
+    }
+  },
+
+
+  {
+    "model":"wager.Betline",
+		
+    "fields": {
+
+    "key_phrase":"this is why",
+    "amount": 10,
+    "duration": 60	
+    }
+  }
+]

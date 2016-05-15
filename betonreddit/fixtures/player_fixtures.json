@@ -5,16 +5,16 @@
     "fields": {
       "username": "cbratton09",
       "email": "cthoughts@gmail.com",
-      "password": "password",
+      "password": "wear23f32424s"
     }
   },
   {
     "model": "player.Player",
     
     "fields": {
-      "username": "John",
-      "email": "Lennon",
-      "password": "John",
+      "username": "likemike23",
+      "email": "ljmikael2231@gmail.com",
+      "password": "3e3e3e3e3e3eaa"
     }
   },
 
@@ -22,9 +22,9 @@
     "model": "player.Player",
     
     "fields": {
-      "username": "John",
-      "email": "Lennon",
-      "password": "John",
+      "username": "Beauna",
+      "email": "tjamsnjelly299@yahoo.com",
+      "password": "ajijq290js"
     }
   },
 
@@ -32,9 +32,9 @@
     "model": "player.Player",
     
     "fields": {
-      "username": "John",
-      "email": "Lennon",
-      "password": "John",
+      "username": "John2",
+      "email": "bo3soij@aol.com",
+      "password": "password123"
     }
   },
 
@@ -42,9 +42,9 @@
     "model": "player.Player",
     
     "fields": {
-      "username": "John",
-      "email": "Lennon",
-      "password": "John",
+      "username": "dksaoc",
+      "email": "dsfarms355@hotmail.com",
+      "password": "rstfalafel1"
     }
-  },
+  }
 ]

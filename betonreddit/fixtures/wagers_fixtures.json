@@ -1,0 +1,75 @@
+[
+
+	{
+		"model": "wager.Wager",
+
+		"fields": {
+			"amount": 100,
+			"player": ["cbratton09"],
+			"betline": ["this is why",1,1],
+
+			"over_OR_under": "over"
+
+		}
+
+	},
+
+
+	{
+		"model": "wager.Wager",
+
+		"fields": {
+			"amount": 150,
+			"player": ["likemike23"],
+			"betline": ["this is why",1,1],
+
+			"over_OR_under": "under"
+
+		}
+
+	},
+
+	{
+		"model": "wager.Wager",
+
+		"fields": {
+			"amount": 130,
+			"player": ["Beauna"],
+			"betline": ["this is why",1,1],
+
+			"over_OR_under": "over"
+
+		}
+
+	},
+
+	{
+		"model": "wager.Wager",
+
+		"fields": {
+			"amount": 50,
+			"player": ["John2"],
+			"betline": ["this is why",1,1],
+
+			"over_OR_under": "over"
+
+		}
+
+	},
+
+	{
+		"model": "wager.Wager",
+
+		"fields": {
+			"amount": 80,
+			"player": ["dksaoc"],
+			"betline": ["this is why",1,1],
+
+			"over_OR_under": "under"
+
+		}
+
+	}
+
+
+]
