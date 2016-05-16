@@ -43,11 +43,14 @@ INSTALLED_APPS = [
     #custom apps
     'player',
     'wager',
+    'history',
+    'highscore',
+    'live',
  
 
     
 
-    #custom installed apps
+    #custom 3rd party apps
     #----------#
     
     #allauth
