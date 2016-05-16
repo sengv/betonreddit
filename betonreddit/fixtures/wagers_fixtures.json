@@ -4,7 +4,7 @@
 		"model": "wager.Wager",
 
 		"fields": {
-			"amount": 100,
+			"amount": 110,
 			"player": ["cbratton09"],
 			"betline": ["this is why",1,1],
 
@@ -19,7 +19,7 @@
 		"model": "wager.Wager",
 
 		"fields": {
-			"amount": 150,
+			"amount": 190,
 			"player": ["likemike23"],
 			"betline": ["this is why",1,1],
 
@@ -33,7 +33,7 @@
 		"model": "wager.Wager",
 
 		"fields": {
-			"amount": 130,
+			"amount": 170,
 			"player": ["Beauna"],
 			"betline": ["this is why",1,1],
 
@@ -47,7 +47,7 @@
 		"model": "wager.Wager",
 
 		"fields": {
-			"amount": 50,
+			"amount": 30,
 			"player": ["John2"],
 			"betline": ["this is why",1,1],
 
@@ -61,11 +61,11 @@
 		"model": "wager.Wager",
 
 		"fields": {
-			"amount": 80,
+			"amount": 180,
 			"player": ["dksaoc"],
 			"betline": ["this is why",1,1],
 
-			"over_OR_under": "under"
+			"over_OR_under": "over"
 
 		}
 

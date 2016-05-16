@@ -24,8 +24,8 @@ class Betline(models.Model):
     duration = models.IntegerField(default=1)
     
     
-    #class Meta:
-    #    unique_together=(('key_phrase', 'amount', 'duration'),)
+    class Meta:
+        unique_together=(('key_phrase', 'amount', 'duration'),)
     
     
     def __str__(self):
@@ -55,8 +55,10 @@ class Wager(models.Model):
     #True = Win, False = Loss. 
     result = models.BooleanField(default=False)
     
-    #class Meta:
-    #    unique_together = ["amount", "player", "betline", "over_OR_under"]
+    class Meta:
+        
+        unique_together = (("amount", "player", "betline", "over_OR_under"),)
+        #unique_together = ["amount", "player", "betline", "over_OR_under"]
 
     def __str__(self):
         
