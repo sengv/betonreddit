@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from .views import home, home_files
+from .views import home, home_files, instructions
 
 from redditData.api import redApi
 
@@ -41,6 +41,7 @@ urlpatterns = [
     url(r'highscore/', include('highscore.urls')),
     url(r'live/', include('live.urls')),
 
+    url(r'^instructions/', instructions, name="instructions"),
     
     url(r'^$', home, name="home")#Home page. I think order matters, and this should be at the end. Probably.
 ]

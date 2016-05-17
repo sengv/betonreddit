@@ -11,3 +11,9 @@ def home_files(request):
     
 def home(request):
     return render(request, "index.html", {})
+    
+    
+    
+def instructions(request):
+    
+    return render(request, "betonreddit/instructions.html", {})

@@ -6,4 +6,4 @@ from django.shortcuts import render
 
 def live_main(request):
     
-    return render(request, "live.html", {})
+    return render(request, "betonreddit/live.html", {})

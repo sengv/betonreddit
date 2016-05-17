@@ -6,4 +6,4 @@ from django.shortcuts import render
 
 def highscore_main(request):
     
-    return render(request, "highschore.html", {})
+    return render(request, "betonreddit/highscore.html", {})

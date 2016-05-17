@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 def history_main(request):
     
-    return render(request, "history.html", {})
+    return render(request, "betonreddit/history.html", {})

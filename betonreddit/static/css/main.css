@@ -6,8 +6,9 @@ html {
 
 body {
     
-    
-    border-color:red;
+    padding-top: 100px;
+    padding-bottom: 20px;
+
 }
 
 ul {
@@ -35,3 +36,43 @@ li a:hover {
     background-color: #111;
     text-decoration: none;
 }
+
+
+.bet-container{
+    
+    padding-top:20px;
+    margin: 0 auto;
+    text-align:center;
+}
+
+#featured_bet_box{
+    
+    padding-top: 20px;
+    margin: 0 auto;
+    background-color: orange;
+    height: 150px;
+    width: 50%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

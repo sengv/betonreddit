@@ -8,7 +8,4 @@ urlpatterns = [
 
     url(r'^$', highscore_main, name="highscore_main"),
 
-
-
-
 ]
