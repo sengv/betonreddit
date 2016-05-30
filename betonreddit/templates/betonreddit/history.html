@@ -6,7 +6,41 @@ Bet on Reddit
 
 
 
-{% block body %}
+{% block content %}
 
+<br><br><br><br><br>
+
+<div class="container">
+   <table id="history-table" border="2" cellpadding="8" cellspacing="8">
+
+        <tr>
+            <th>bet line</th>
+            <th>amount</th>
+            <th>o/u</th>
+            <th>result</th>         
+        </tr>
+       
+       {% for w in all_wagers %}
+        <tr>
+            <!-- 
+                TODO: Create more columns to output all of the stuff in Betline,
+                instead of just the 'key_phrase'?
+            -->
+            <td>{{w.betline.key_phrase}}</td>
+            <td>{{w.amount}}</td>
+            <td>{{w.over_OR_under}}</td>
+            
+            <!-- 'result' has TRUE or FALSE value-->
+            {% if w.result %}
+                <td>W</td>
+            {% else %}
+                <td>L</td>
+            {% endif %}
+       
+        </tr>
+       {% endfor %}
+    </table>
+
+</div>
 
 {% endblock %}

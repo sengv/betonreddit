@@ -2,6 +2,7 @@ html {
     
     
     background-color:azure;
+    
 }
 
 body {
@@ -47,20 +48,45 @@ li a:hover {
 
 #featured_bet_box{
     
-    padding-top: 20px;
+    padding-top: 50px;
+    padding-left: 10px;
     margin: 0 auto;
     background-color: orange;
     height: 150px;
     width: 50%;
+    text-align: left;
 
 }
 
+#bet-description{
+    
+    
+    font-size: 25px;
+}
 
 
+.decision-buttons{
+    
+    
+    float: right;
+    
+}
 
+#history-table{
+    
+    
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 80%;
+    height: 10%;
+    
+}
 
-
-
+th {
+    text-align: center;
+}
 
 
 
